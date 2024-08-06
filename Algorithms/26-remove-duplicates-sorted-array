@@ -1,0 +1,18 @@
+import numpy as np
+
+class Solution(object):
+    def removeDuplicates(nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        count = 0
+        for val in nums:
+            if nums.count(val) == 1:
+                count +=1
+
+        return count
+    
+    print(removeDuplicates([1,2,3,4,5,5]))
+
+        
